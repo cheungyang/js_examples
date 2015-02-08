@@ -1,0 +1,17 @@
+{
+  "name": "protractor-har",
+  "description": "Example of getting network traffif by HAR or XHR interception",
+  "version": "0.0.1",
+  "author": "Alva Cheung <mallocworks@gmail.com>",
+  "dependencies" :
+    {
+      "protractor" : "",
+      "browsermob_proxy" : "",
+      "q" : ""
+  },
+  "scripts": {
+    "postinstall": "node node_modules/protractor/bin/webdriver-manager update",
+    "server": "node server.js",
+    "test": "node node_modules/protractor/bin/protractor conf.js"
+  }
+}

@@ -1,0 +1,23 @@
+<html>
+ <head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>
+   $(document).ready(function(){
+       //Make ajax call to fetch data
+       setTimeout(function(){
+         $.ajax({
+             url: "http://localhost:1337/data",
+             type: "GET",
+             dataType: 'html',
+             success: function(resp){
+                  $('#resp').html(resp);
+              }
+         });
+       }, 2000);
+   });
+  </script>
+ </head>
+ <body>
+sending ajax...<span id="resp"></span>
+ </body>
+</html>
