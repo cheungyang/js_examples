@@ -5,7 +5,7 @@ exports.config = {
   seleniumAddress: 'http://localhost:4444/wd/hub',
 
   capabilities: {
-    browserName: 'chrome',
+    browserName: 'firefox',
     proxy: {
       proxyType: 'manual',
       httpProxy: 'localhost:8888',
@@ -14,7 +14,7 @@ exports.config = {
   },
 
   specs: [
-  	//'getXHR-spec.js'
+  	//'getXHR-spec.js',
   	'getHAR-spec.js'
   ],
 
